@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" href="/assets/img/user 1.png" type="image/icon type">
+    
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+    <title>Trainer Dashboard Panel</title>
+</head>
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+               <img src="/assets/img/user 1.png" alt="logo">
+            </div>
+
+            <span class="logo_name"> Trainer Panel</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="/Trainer/index.html">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Dashboard</span>
+                </a></li>
+                <li><a href="/Trainer/trainerattendance.html">
+                    <i class="uil uil-files-landscapes"></i>
+                    <span class="link-name">Attendance Status</span>
+                </a></li>
+                <li><a href="/Trainer/trainerfeedback.html">
+                    <i class="uil uil-feedback"></i>
+                    <span class="link-name">Feedback</span>
+                </a></li>
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="/index.html">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+
+               
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search here...">
+            </div>
+            <h2>Hello TR-001...</h2>
+            <img src="/assets/img/user 1.png" alt="profile">
+        </div>
+
+        <div class="dash-content">
+          <div class="overview">
+              <div class="title">
+                  <i class="uil uil-book"></i>
+                  <span class="text">My Courses</span>
+              </div>
+
+        <section class="main-course">
+          <div class="course-box">
+            <ul>
+              <a href="trainercardall.html" style="text-decoration: none;"><li class="active">All</li></a>
+              <a href="trainercardin.html" style="text-decoration: none;"><li class="active">In progress</li></a> 
+              <a href="trainercardup.html" style="text-decoration: none;"><li class="active">Upcoming</li></a>
+            </ul>
+            <div class="course">
+              <div class="box">
+                <h3>HTML</h3>
+                <p>80% - progress</p>
+                <button>Continue</button>
+                <i class="fab fa-html5 html"></i>
+                <progress style="margin: -65rem 10rem 7rem 0rem;" id="file" value="80" max="100"> 80% </progress>
+            </div>
+              <!-- <div class="box">
+                <h3>CSS</h3>
+                <p>0% - Upcoming</p>
+                <button>View</button>
+                <i class="fab fa-css3-alt css"></i>
+                <progress style="margin: -65rem 10rem 7rem 0rem;" id="file" value="3" max="100"> 0% </progress>
+            </div>
+              <div class="box">
+                <h3>JavaScript</h3>
+                <p>0% - Upcoming</p>
+                <button>View</button>
+                <i class="fab fa-js-square js"></i>
+                <progress style="margin: -65rem 10rem 7rem 0rem;" id="file" value="3" max="100"> 0% </progress>
+            </div>  -->
+            </div>
+          </div>
+        </section>
+    </section>
+</body>
+</html>

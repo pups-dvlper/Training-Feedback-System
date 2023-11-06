@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" href="/assets/img/user 2.png" type="image/icon type">
+   
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+    <title>Student Register Panel</title>
+</head>
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+               <img src="/assets/img/user 2.png" alt="logo">
+            </div>
+
+            <span class="logo_name"> Student Panel</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="index.html">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Dashboard</span>
+                </a></li>
+                <li><a href="studentregister.html">
+                    <i class="uil uil-files-landscapes"></i>
+                    <span class="link-name">Register</span>
+                </a></li>
+                <li><a href="studentnewfeedback.html">
+                    <i class="uil uil-feedback"></i>
+                    <span class="link-name">Feedback</span>
+                </a></li>
+                <li><a href="studendnotify.html">
+                    <i class="uil uil-bell"></i>
+                    <span class="link-name">Notifications</span>
+                </a></li>
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="/index.html">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+
+             
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search here...">
+            </div>
+            <h2>Hello STU-001...</h2>
+            <img src="/assets/img/user 2.png" alt="profile">
+        </div>
+
+        <div class="dash-content">
+          <div class="overview">
+              <div class="title">
+                  <i class="uil uil-book"></i>
+                  <span class="text">Course Registration</span>
+              </div>
+           </div>
+
+          
+
+           <form>
+            <div style="max-width: 400px;">
+            </div>
+            <div style="padding-bottom: 18px;font-size : 24px;">Training Course Registration</div>      
+            <div style="padding-bottom: 18px;font-size : 18px;">Register up for a training course using this form.</div>
+            
+            <div style="display: flex; padding-bottom: 18px;max-width : 450px;">
+            <div style=" margin-left: 0; margin-right: 1%; width: 49%;">Student Id<span style="color: red;"> *</span><br/>
+            <input type="text" id="data_4" name="data_4" style="max-width: 100%;" class="form-control" required/>
+            </div>
+            
+            </div><div style="padding-bottom: 18px;">Email<span style="color: red;"> *</span><br/>
+            <input type="email" id="data_6" name="data_6" style="max-width : 450px;" class="form-control" required/>
+            </div>
+            <div style="padding-bottom: 18px;">Phone<span style="color: red;"> *</span><br/>
+            <input type="number" id="data_7" name="data_7" style="max-width : 450px;" class="form-control" required/>
+            </div>
+            <div class="form-group">
+                <p>Mode of training<span style="color: red;"> *</span></p>
+                
+                <label>
+                  <input
+                  name="user-recommend"
+                  value="definitely"
+                  type="radio"
+                  class="input-radio"
+                  checked
+                  
+                  />Offline</label>
+                <label>
+                  <input
+                  name="user-recommend"
+                  value="maybe"
+                  type="radio"
+                  class="input-radio"
+                  />Online</label>
+              
+                
+                </div>
+
+            
+                
+            <a href="studentsuccess.html" style="text-decoration: none; color:#fff; background:#43d585;color:#fff;padding:12px;border:0;cursor:pointer">Submit</a>&nbsp;
+            <input style="background:#43a7d5;color:#fff;padding:12px;border:0;cursor:pointer" type="reset" value="Reset" required>&nbsp;
+            
+                </form>
+            
+            
+        </div>
+        
+        
+    </section>
+
+    
+
+
+    
+</body>
+</html>

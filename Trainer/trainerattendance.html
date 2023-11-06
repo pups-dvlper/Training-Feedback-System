@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" href="/assets/img/user 1.png" type="image/icon type">
+    
+    
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+    <title>Trainer Attendance Panel</title>
+</head>
+<style>
+  .search-boxz{
+    position: relative;
+    float: right;
+    height: 45px;
+    max-width: 400px;
+    width: 100%;
+    margin: -9rem 0rem 2rem 0rem;
+}
+
+    .search-boxz select{
+    position: absolute;
+    border: 1px solid var(--border-color);
+    background-color: var(--panel-color);
+    padding: 0 25px 0 50px;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: 400;
+    outline: none;
+}
+
+    .search-boxz i{
+    position: absolute;
+    left: 15px;
+    font-size: 22px;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--black-light-color);
+}
+</style>
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+               <img src="/assets/img/user 1.png" alt="logo">
+            </div>
+
+            <span class="logo_name"> Trainer Panel</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="/Trainer/index.html">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Dashboard</span>
+                </a></li>
+                <li><a href="/Trainer/trainerattendance.html">
+                    <i class="uil uil-files-landscapes"></i>
+                    <span class="link-name">Attendance Status</span>
+                </a></li>
+                <li><a href="/Trainer/trainerfeedback.html">
+                    <i class="uil uil-feedback"></i>
+                    <span class="link-name">Feedback</span>
+                </a></li>
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="/index.html">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+
+               
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search here...">
+            </div>
+            <h2>Hello TR-001...</h2>
+            <img src="/assets/img/user 1.png" alt="profile">
+        </div>
+
+        <div class="dash-content">
+          <div class="overview">
+              <div class="title">
+                  <i class="uil uil-book"></i>
+                  <span class="text">Attendance</span>
+              </div>
+          </div>
+
+          <div class="contains">
+  
+
+
+            <section class="mains">
+        
+              <section class="attendance">
+                <div class="attendance-list">
+                  <h1>JS Course Attendance &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i style="font-size: 7rem;" class="fab fa-js-square js"></i></h1>
+                  <div class="search-boxz">
+                    <i class="uil uil-search"></i>
+                    <!-- <input type="search" placeholder="Search here..."> -->
+                   
+                    <select>
+                      <option>Select filter type</option>
+                      <option>Name</option>
+                      <option>Total Students Present</option>
+                    </select>
+                </div>
+                <div style="text-align:right">
+                  <form>
+                  <button type="submit"  style="text-decoration: none; color:#fff; background:#43d585;color:#fff;padding:12px;border:0;cursor:pointer">Done</button>
+                  <button style="text-decoration: none; color:#fff; background:steelblue;color:#fff;padding:12px;border:0;cursor:pointer">Generate</button>
+                </form>
+                </div>
+
+                <div style="overflow-x:auto;">
+                  <table class="tables">
+                    <thead>
+                      <tr>
+                        <th>S.No</th>
+                        <th>Student Name</th>
+                        <th>01/11</th>
+                        <th>02/11</th>
+                        <th>03/11</th>
+                        <th>04/11</th>
+                        <th>05/11</th>
+                        <th>06/11</th>
+                        <th>07/11</th>
+                        <th>Days Missed</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>01</td>
+                        <td>Sam David</td>
+                        <td><input type="checkbox" checked disabled></td>
+                        <td><input type="checkbox" disabled></td>
+                        <td><input type="checkbox" checked disabled></td>
+                        <td><input type="checkbox" checked disabled></td>
+                        <td><input type="checkbox" checked disabled></td>
+                        <td><input type="checkbox" checked disabled></td>
+                        <td><input type="checkbox"></td>
+                        <td>01</td>
+                      </tr>
+                      <tr class="actives">
+                        <td>02</td>
+                        <td>Balbina Kherr</td>
+                        <td><input type="checkbox" checked disabled></td>
+                        <td><input type="checkbox" checked disabled></td>
+                        <td><input type="checkbox" checked disabled></td>
+                        <td><input type="checkbox" disabled></td>
+                        <td><input type="checkbox" disabled></td>
+                        <td><input type="checkbox" disabled></td>
+                        <td><input type="checkbox"></td>
+                        <td>03</td>
+                        
+                      </tr>
+                      <tr>
+                        <td>03</td>
+                        <td>Badan John</td>
+                        <td><input type="checkbox" checked disabled></td>
+                        <td><input type="checkbox" disabled></td>
+                        <td><input type="checkbox" checked disabled></td>
+                        <td><input type="checkbox" disabled></td>
+                        <td><input type="checkbox" checked disabled></td>
+                        <td><input type="checkbox" disabled></td>
+                        <td><input type="checkbox"></td>
+                        <td>03</td>
+                      </tr>
+                      <tr>
+                        <td>04</td>
+                        <td>Sara David</td>
+                        <td><input type="checkbox" checked disabled></td>
+                        <td><input type="checkbox" checked disabled></td>
+                        <td><input type="checkbox" checked disabled></td>
+                        <td><input type="checkbox" checked disabled></td>
+                        <td><input type="checkbox" checked disabled></td>
+                        <td><input type="checkbox" checked disabled></td>
+                        <td><input type="checkbox"></td>
+                        <td>-</td>
+                      </tr>
+                      <tr >
+                        <td>05</td>
+                        <td>Salina</td>
+                        <td><input type="checkbox" checked disabled></td>
+                        <td><input type="checkbox" checked disabled></td>
+                        <td><input type="checkbox" disabled></td>
+                        <td><input type="checkbox" checked disabled></td>
+                        <td><input type="checkbox" checked disabled></td>
+                        <td><input type="checkbox" checked disabled></td>
+                        <td><input type="checkbox"></td>
+                        <td>01</td>
+                      </tr>
+                      <tr >
+                        <td>06</td>
+                        <td>Tara Smith</td>
+                        <td><input type="checkbox" checked disabled></td>
+                        <td><input type="checkbox" checked disabled></td>
+                        <td><input type="checkbox" checked disabled></td>
+                        <td><input type="checkbox" checked disabled></td>
+                        <td><input type="checkbox" checked disabled></td>
+                        <td><input type="checkbox" checked disabled></td>
+                        <td><input type="checkbox"></td>
+                        <td>-</td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>Total Students Present</td>
+                        <td>07</td>
+                        <td>04</td>
+                        <td>05</td>
+                        <td>04</td>
+                        <td>05</td>
+                        <td>04</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+            </section>
+          </div>
+        </div>
+
+        
+        
+    </section>
+
+    
+
+
+</body>
+</html>

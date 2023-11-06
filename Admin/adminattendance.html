@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" href="/assets/img/user.png" type="image/icon type">
+    
+    
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+
+    <title>Admin Dashboard Panel</title>
+    <style>
+      .search-boxz{
+        position: relative;
+        float: right;
+        height: 45px;
+        max-width: 400px;
+        width: 100%;
+        margin: -9rem 0rem 2rem 0rem;
+    }
+    
+        .search-boxz select{
+        position: absolute;
+        border: 1px solid var(--border-color);
+        background-color: var(--panel-color);
+        padding: 0 25px 0 50px;
+        border-radius: 5px;
+        height: 100%;
+        width: 100%;
+        color: var(--text-color);
+        font-size: 15px;
+        font-weight: 400;
+        outline: none;
+    }
+    
+        .search-boxz i{
+        position: absolute;
+        left: 15px;
+        font-size: 22px;
+        z-index: 1;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--black-light-color);
+    }
+    </style>
+  
+</head>
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+               <img src="/assets/img/user.png" alt="logo">
+            </div>
+
+            <span class="logo_name"> Admin Panel</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="index.html">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Dashboard</span>
+                </a></li>
+                <li><a href="adminsurvey.html">
+                    <i class="uil uil-files-landscapes"></i>
+                    <span class="link-name">Build Feedbacks</span>
+                </a></li>
+                <li><a href="adminanalytics.html">
+                    <i class="uil uil-chart"></i>
+                    <span class="link-name">Analytics</span>
+                </a></li>
+                <li><a href="adminattendance.html">
+                    <i class="uil uil-user"></i>
+                    <span class="link-name">Students</span>
+                </a></li>
+                <li><a href="admintrainer.html">
+                    <i class="uil uil-book-reader"></i>
+                    <span class="link-name">Trainers</span>
+                </a></li>
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="/index.html">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+
+               
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search here...">
+            </div>
+            <h2>Hello Admin...</h2>
+            <img src="/assets/img/user.png" alt="profile">
+        </div>
+
+        <div class="dash-content">
+            <div class="overview">
+                <div class="title">
+                    <i class="uil uil-tachometer-fast-alt"></i>
+                    <span class="text">Students Attendance</i></span>
+                </div>
+
+                <div class="contains">
+  
+
+
+                  <section class="mains">
+              
+                    <section class="attendance">
+                      <div class="attendance-list">
+                        <h1>Html Course Attendance &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i style="font-size: 7rem;" class="fab fa-html5 html"></i></h1>
+                        <div class="search-boxz">
+                          <i class="uil uil-search"></i>
+                          <!-- <input type="search" placeholder="Search here..."> -->
+                         
+                          <select>
+                            <option>Select filter type</option>
+                            <option>Name</option>
+                            <option>Total Students Present</option>
+                          </select>
+                      </div>
+
+                      <div style="overflow-x:auto;">
+                        <table class="tables">
+                          <thead>
+                            <tr>
+                              <th>S.No</th>
+                              <th>Student Name</th>
+                              <th>01/11</th>
+                              <th>02/11</th>
+                              <th>03/11</th>
+                              <th>04/11</th>
+                              <th>05/11</th>
+                              <th>06/11</th>
+                              <th>07/11</th>
+                              <th>Days Missed</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>01</td>
+                              <td>Sam David</td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/cross.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td>01</td>
+                            </tr>
+                            <tr class="actives">
+                              <td>02</td>
+                              <td>Balbina Kherr</td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/cross.svg"></td>
+                              <td><img src="/assets/img/cross.svg"></td>
+                              <td><img src="/assets/img/cross.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td>03</td>
+                              
+                            </tr>
+                            <tr>
+                              <td>03</td>
+                              <td>Badan John</td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/cross.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/cross.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/cross.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td>03</td>
+                            </tr>
+                            <tr>
+                              <td>04</td>
+                              <td>Sara David</td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              
+                              <td>-</td>
+                            </tr>
+                            <tr >
+                              <td>05</td>
+                              <td>Salina</td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/cross.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              
+                              <td>01</td>
+                            </tr>
+                            <tr >
+                              <td>06</td>
+                              <td>Tara Smith</td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td>-</td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td>Total Students Present</td>
+                              <td>07</td>
+                              <td>04</td>
+                              <td>05</td>
+                              <td>04</td>
+                              <td>05</td>
+                              <td>04</td>
+                              <td>07</td>
+                              <td>08</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </section>
+                </div>
+
+                  <div class="contains">
+  
+
+
+                    <section class="mains">
+                
+                      <section class="attendance">
+                        <div class="attendance-list">
+                          <h1>Css Course Attendance &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i style="font-size: 7rem;" class="fab fa-css3-alt css"></i></h1>
+                          <div class="search-boxz">
+                            <i class="uil uil-search"></i>
+                            <!-- <input type="search" placeholder="Search here..."> -->
+                           
+                            <select>
+                              <option>Select filter type</option>
+                              <option>Name</option>
+                              <option>Total Students Present</option>
+                            </select>
+                        </div>
+
+                        <div style="overflow-x:auto;">
+                        <table class="tables">
+                          <thead>
+                            <tr>
+                              <th>S.No</th>
+                              <th>Student Name</th>
+                              <th>01/11</th>
+                              <th>02/11</th>
+                              <th>03/11</th>
+                              <th>04/11</th>
+                              <th>05/11</th>
+                              <th>06/11</th>
+                              <th>07/11</th>
+                              <th>Days Missed</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>01</td>
+                              <td>Sam David</td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/cross.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td>01</td>
+                            </tr>
+                            <tr class="actives">
+                              <td>02</td>
+                              <td>Balbina Kherr</td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/cross.svg"></td>
+                              <td><img src="/assets/img/cross.svg"></td>
+                              <td><img src="/assets/img/cross.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td>03</td>
+                              
+                            </tr>
+                            <tr>
+                              <td>03</td>
+                              <td>Badan John</td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/cross.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/cross.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/cross.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td>03</td>
+                            </tr>
+                            <tr>
+                              <td>04</td>
+                              <td>Sara David</td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              
+                              <td>-</td>
+                            </tr>
+                            <tr >
+                              <td>05</td>
+                              <td>Salina</td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/cross.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              
+                              <td>01</td>
+                            </tr>
+                            <tr >
+                              <td>06</td>
+                              <td>Tara Smith</td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td>-</td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td>Total Students Present</td>
+                              <td>07</td>
+                              <td>04</td>
+                              <td>05</td>
+                              <td>04</td>
+                              <td>05</td>
+                              <td>04</td>
+                              <td>07</td>
+                              <td>08</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      </section>
+                    </section>
+                  </div>
+
+                  <div class="contains">
+  
+
+
+                    <section class="mains">
+                
+                      <section class="attendance">
+                        <div class="attendance-list">
+                          <h1>JS Course Attendance &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i style="font-size: 7rem;" class="fab fa-js-square js"></i></h1>
+                          <div class="search-boxz">
+                            <i class="uil uil-search"></i>
+                            <!-- <input type="search" placeholder="Search here..."> -->
+                           
+                            <select>
+                              <option>Select filter type</option>
+                              <option>Name</option>
+                              <option>Total Students Present</option>
+                            </select>
+                        </div>
+
+                        <div style="overflow-x:auto;">
+                        <table class="tables">
+                          <thead>
+                            <tr>
+                              <th>S.No</th>
+                              <th>Student Name</th>
+                              <th>01/11</th>
+                              <th>02/11</th>
+                              <th>03/11</th>
+                              <th>04/11</th>
+                              <th>05/11</th>
+                              <th>06/11</th>
+                              <th>07/11</th>
+                              <th>Days Missed</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>01</td>
+                              <td>Sam David</td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/cross.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td>01</td>
+                            </tr>
+                            <tr class="actives">
+                              <td>02</td>
+                              <td>Balbina Kherr</td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/cross.svg"></td>
+                              <td><img src="/assets/img/cross.svg"></td>
+                              <td><img src="/assets/img/cross.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td>03</td>
+                              
+                            </tr>
+                            <tr>
+                              <td>03</td>
+                              <td>Badan John</td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/cross.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/cross.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/cross.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td>03</td>
+                            </tr>
+                            <tr>
+                              <td>04</td>
+                              <td>Sara David</td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              
+                              <td>-</td>
+                            </tr>
+                            <tr >
+                              <td>05</td>
+                              <td>Salina</td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/cross.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              
+                              <td>01</td>
+                            </tr>
+                            <tr >
+                              <td>06</td>
+                              <td>Tara Smith</td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td><img src="/assets/img/tick.svg"></td>
+                              <td>-</td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td>Total Students Present</td>
+                              <td>07</td>
+                              <td>04</td>
+                              <td>05</td>
+                              <td>04</td>
+                              <td>05</td>
+                              <td>04</td>
+                              <td>07</td>
+                              <td>08</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      </section>
+                    </section>
+                  </div>
+            </div>
+
+           
+        </div>
+    </section>
+
+    <div id="myModal1" class="modal1">
+        
+      
+        
+      <div class="modal1-content">
+        
+        <div class="modal1-header">
+          <span class="close1">&times;</span>
+          <h2 style="text-align: center;">Respond here</h2>
+        </div>
+        <div class="modal1-body">
+          <section>
+            <div class="rt-container">
+                  <div class="col-rt-12">
+                      <div class="Scriptcontent">
+                      
+               
+        <div class="feedback">
+        
+        
+        
+        <form method="post" action="#action-url">
+        <label>1. Your overall experience with the trainer ?</label><br>
+          
+        <span class="scale-rating">
+          <label value="1">
+          <input type="radio" name="rating" disabled>
+          <label style="width:100%;"></label>
+          </label>
+          <label value="2">
+          <input type="radio" name="rating" disabled>
+          <label style="width:100%;"></label>
+          </label>
+          <label value="3">
+          <input type="radio" name="rating" disabled>
+          <label style="width:100%;"></label>
+          </label>
+          <label value="4" style="background-color: #43d585;">
+          <input type="radio" name="rating" disabled>
+          <label style="width:100%;"></label>
+          </label>
+          <label value="5">
+          <input type="radio" name="rating" disabled>
+          <label style="width:100%;"></label>
+          </label>
+        </span>
+        
+          <div class="clear"></div> 
+          <hr class="survey-stu">
+        <label>2. Friendliness shown to you while recieving your content</label><br>
+        <span class="scale-rating">
+          <label value="1">
+          <input type="radio" name="rating" disabled>
+          <label style="width:100%;"></label>
+          </label>
+          <label value="2">
+          <input type="radio" name="rating" disabled>
+          <label style="width:100%;"></label>
+          </label>
+          <label value="3" style="background-color: #43d585;">
+          <input type="radio" name="rating" disabled>
+          <label style="width:100%;"></label>
+          </label>
+          <label value="4">
+          <input type="radio" name="rating" disabled>
+          <label style="width:100%;"></label>
+          </label>
+          <label value="5">
+          <input type="radio" name="rating" disabled>
+          <label style="width:100%;"></label>
+          </label>
+        </span>
+        
+        
+          <div class="clear"></div> 
+          <hr class="survey-stu">
+        <label>3. Did your trainer respond to your queries in a timely manner?</label><br><br/>
+          <div style="color:grey">
+            
+            
+          </div>
+        <span class="scale-rating">
+          <label value="1">
+          <input type="radio" name="rating" disabled>
+          <label style="width:100%;"></label>
+          </label>
+          <label value="2">
+          <input type="radio" name="rating" disabled>
+          <label style="width:100%;"></label>
+          </label>
+          <label value="3">
+          <input type="radio" name="rating" disabled>
+          <label style="width:100%;"></label>
+          </label>
+          <label value="4">
+          <input type="radio" name="rating" disabled>
+          <label style="width:100%;"></label>
+          </label>
+          <label value="5" style="background-color: #43d585;">
+          <input type="radio" name="rating" disabled>
+          <label style="width:100%;"></label>
+          </label>
+        </span>
+        
+        <div class="clear"></div> 
+        <hr class="survey-stu">
+        <label>4.Did the trainer give you an orientation about the program?</label><br><br/>
+        <div style="color:grey">
+          
+          
+        </div>
+        <span class="scale-rating">
+        <label value="1">
+        <input type="radio" name="rating" >
+        <label style="width:100%;"></label>
+        </label>
+        <label value="2">
+        <input type="radio" name="rating" >
+        <label style="width:100%;"></label>
+        </label>
+        <label value="3" style="background-color: #43d585;">
+        <input type="radio" name="rating">
+        <label style="width:100%;"></label>
+        </label>
+        <label value="4">
+        <input type="radio" name="rating">
+        <label style="width:100%;"></label>
+        </label>
+        <label value="5">
+        <input type="radio" name="rating">
+        <label style="width:100%;"></label>
+        </label>
+        </span>
+        
+        <div class="clear"></div> 
+        <hr class="survey-stu">
+        <label>5.Does the trainer follow an organic and logical process during training?</label><br><br/>
+        <div style="color:grey">
+         
+          
+        </div>
+        <span class="scale-rating">
+        <label value="1">
+        <input type="radio" name="rating" >
+        <label style="width:100%;"></label>
+        </label>
+        <label value="2">
+        <input type="radio" name="rating" >
+        <label style="width:100%;"></label>
+        </label>
+        <label value="3">
+        <input type="radio" name="rating">
+        <label style="width:100%;"></label>
+        </label>
+        <label value="4" style="background-color: #43d585;">
+        <input type="radio" name="rating">
+        <label style="width:100%;"></label>
+        </label>
+        <label value="5">
+        <input type="radio" name="rating">
+        <label style="width:100%;"></label>
+        </label>
+        </span>
+        
+        <div class="clear"></div> 
+        <hr class="survey-stu">
+        <label>6.Do you feel comfortable to handle the training?</label><br><br/>
+        <div style="color:grey">
+          
+          
+        </div>
+        <span class="scale-rating">
+        <label value="1">
+        <input type="radio" name="rating" >
+        <label style="width:100%;"></label>
+        </label>
+        <label value="2">
+        <input type="radio" name="rating" >
+        <label style="width:100%;"></label>
+        </label>
+        <label value="3" style="background-color: #43d585;">
+        <input type="radio" name="rating">
+        <label style="width:100%;"></label>
+        </label>
+        <label value="4">
+        <input type="radio" name="rating">
+        <label style="width:100%;"></label>
+        </label>
+        <label value="5">
+        <input type="radio" name="rating">
+        <label style="width:100%;"></label>
+        </label>
+        </span>
+        
+        <div class="clear"></div> 
+        <hr class="survey-stu">
+        <label>7.Is the trainer able to answer all your questions and concerns during session?</label><br><br/>
+        <div style="color:grey">
+          
+          
+        </div>
+        <span class="scale-rating">
+        <label value="1">
+        <input type="radio" name="rating" >
+        <label style="width:100%;"></label>
+        </label>
+        <label value="2">
+        <input type="radio" name="rating" >
+        <label style="width:100%;"></label>
+        </label>
+        <label value="3">
+        <input type="radio" name="rating">
+        <label style="width:100%;"></label>
+        </label>
+        <label value="4">
+        <input type="radio" name="rating">
+        <label style="width:100%;"></label>
+        </label>
+        <label value="5" style="background-color: #43d585;">
+        <input type="radio" name="rating">
+        <label style="width:100%;"></label>
+        </label>
+        </span>
+        
+        <div class="clear"></div> 
+        <hr class="survey-stu">
+        <label>8.How would you rate the trainer's proficiency?</label><br><br/>
+        <div style="color:grey">
+          
+          
+        </div>
+        <span class="scale-rating">
+        <label value="1">
+        <input type="radio" name="rating" >
+        <label style="width:100%;"></label>
+        </label>
+        <label value="2">
+        <input type="radio" name="rating" >
+        <label style="width:100%;"></label>
+        </label>
+        <label value="3" style="background-color: #43d585;">
+        <input type="radio" name="rating">
+        <label style="width:100%;"></label>
+        </label>
+        <label value="4">
+        <input type="radio" name="rating">
+        <label style="width:100%;"></label>
+        </label>
+        <label value="5">
+        <input type="radio" name="rating">
+        <label style="width:100%;"></label>
+        </label>
+        </span>
+        
+          <div class="clear"></div> 
+          <hr class="survey-stu"> 
+        <label for="">9. Any Other suggestions:</label><br/><br/>
+        <textarea cols="75" name="commentText" rows="5" disabled> Good trainer for students.</textarea><br>
+        <br>
+        </form> 
+                          </div>
+                   
+                </div>
+            </div>
+            </div>
+        </section>
+          
+        </div>
+        
+      </div>
+    
+    </div>
+
+    <script>
+      var modal = document.getElementById("myModal");
+
+
+var btn = document.getElementById("myBtn");
+
+
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+modal.style.display = "block";
+}
+
+span.onclick = function() {
+modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+if (event.target == modal) {
+  modal.style.display = "none";
+}
+}
+</script>
+
+<!-- REPLY JS -->
+<script>
+  var modal = document.getElementById("myModal1");
+  
+  var btn = document.getElementById("myBtn1");
+  
+  var span = document.getElementsByClassName("close1")[0];
+  
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  
+  </script>
+</body>
+</html>

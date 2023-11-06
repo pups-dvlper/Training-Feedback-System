@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" href="/assets/img/user.png" type="image/icon type">
+    
+    <link rel="stylesheet" href="/assets/css/style.css">
+     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Admin Dashboard Panel</title>
+</head>
+<style>
+    .search-boxz{
+      position: relative;
+      float: right;
+      height: 45px;
+      max-width: 400px;
+      width: 100%;
+      margin: -9rem 0rem 2rem 0rem;
+  }
+  
+      .search-boxz select{
+      position: absolute;
+      border: 1px solid var(--border-color);
+      background-color: var(--panel-color);
+      padding: 0 25px 0 50px;
+      border-radius: 5px;
+      height: 100%;
+      width: 100%;
+      color: var(--text-color);
+      font-size: 15px;
+      font-weight: 400;
+      outline: none;
+  }
+  
+      .search-boxz i{
+      position: absolute;
+      left: 15px;
+      font-size: 22px;
+      z-index: 10;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--black-light-color);
+  }
+  </style>
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+               <img src="/assets/img/user.png" alt="logo">
+            </div>
+
+            <span class="logo_name"> Admin Panel</span>
+            <br>            
+        </div>
+        <!-- <div><h2> Admin Panel</h2></div> -->
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="index.html">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Dashboard</span>
+                </a></li>
+                <li><a href="adminsurvey.html">
+                    <i class="uil uil-files-landscapes"></i>
+                    <span class="link-name">Build Feedbacks</span>
+                </a></li>
+                <li><a href="adminanalytics.html">
+                    <i class="uil uil-chart"></i>
+                    <span class="link-name">Analytics</span>
+                </a></li>
+                <li><a href="adminattendance.html">
+                    <i class="uil uil-user"></i>
+                    <span class="link-name">Students</span>
+                </a></li>
+                <li><a href="admintrainer.html">
+                    <i class="uil uil-book-reader"></i>
+                    <span class="link-name">Trainers</span>
+                </a></li>
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="/index.html">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+
+               
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search here...">
+            </div>
+            <h2>Hello Admin...</h2>
+            <img src="/assets/img/user.png" alt="profile">
+        </div>
+
+        <div class="dash-content">
+            <div class="overview">
+                <div class="title">
+                    <i class="uil uil-tachometer-fast-alt"></i>
+                    <span class="text">Dashboard</span>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxe box1">
+                        <i class="uil uil-book-reader"></i>
+                        <span class="text">Total Trainers</span>
+                        <span class="number">20</span>
+                    </div>
+                    <div class="boxe box2">
+                        <i class="uil uil-user"></i>
+                        <span class="text">Students</span>
+                        <span class="number">100</span>
+                    </div>
+                    <div class="boxe box3">
+                        <i class="uil uil-feedback"></i>
+                        <span class="text">Total Feedbacks</span>
+                        <span class="number">500</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity">
+                <div class="title">
+                    <i class="uil uil-clock-three"></i>
+                    <span class="text">Overall Views</span>
+                </div>
+                <div class="contains">
+  
+
+
+                    <section class="mains">
+                
+                      <section class="attendance">
+                        <div class="attendance-list">
+                          <h1>Registrations</h1>
+                          <div class="search-boxz">
+                            <i class="uil uil-search"></i>
+                            <!-- <input type="search" placeholder="Search here..."> -->
+                           
+                            <select>
+                              <option>Select filter type</option>
+                              <option>Name</option>
+                              <option>Type</option>
+                            </select>
+                        </div>
+                          <table class="tables">
+                            <thead>
+                              <tr>
+                                <th>S.No</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Joined</th>
+                                <th>Type</th>
+                                <th>Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>01</td>
+                                <td>Prem Shahi</td>
+                                <td>premshahi@gmail.com</td>
+                                <td>03-24-22</td>
+                                <td>Student</td>
+                                <td><span class="data-list" style="font-size: 1rem;"><button>&#10003;</button>&nbsp;&nbsp;&nbsp;&nbsp;<button>&#10060;</button></span></td>
+                        
+                                <!-- <td><button>View</button></td> -->
+                              </tr>
+                              <tr class="actives">
+                                <td>02</td>
+                                <td>Deepa Chand</td>
+                                <td>deepachand@gmail.com</td>
+                                <td>03-24-22</td>
+                                <td>Trainer</td>
+                                <td><span class="data-list" style="font-size: 1rem;"><button>&#10003;</button>&nbsp;&nbsp;&nbsp;&nbsp;<button>&#10060;</button></span></td>
+                        
+                                <!-- <td><button>View</button></td> -->
+                              </tr>
+                              <tr>
+                                <td>03</td>
+                                <td>prakashhai</td>
+                                <td>prakashhai@gmail.com</td>
+                                <td>03-24-22</td>
+                                <td>Trainer</td>
+                                <td><span class="data-list" style="font-size: 1rem;"><button>&#10003;</button>&nbsp;&nbsp;&nbsp;&nbsp;<button>&#10060;</button></span></td>
+                        
+                                <!-- <td><button>View</button></td> -->
+                              </tr>
+                              <tr>
+                                <td>04</td>
+                                <td>Manisha Chand</td>
+                                <td>manishachand@gmail.com</td>
+                                <td>03-24-22</td>
+                                <td>Student</td>
+                                <td><span class="data-list" style="font-size: 1rem;"><button>&#10003;</button>&nbsp;&nbsp;&nbsp;&nbsp;<button>&#10060;</button></span></td>
+                        
+                                <!-- <td><button>View</button></td> -->
+                              </tr>
+                              <tr >
+                                <td>05</td>
+                                <td>Pratima Shahi</td>
+                                <td>pratimashhai@gmail.com</td>
+                                <td>03-24-22</td>
+                                <td>Student</td>
+                                <td><span class="data-list" style="font-size: 1rem;"><button>&#10003;</button>&nbsp;&nbsp;&nbsp;&nbsp;<button>&#10060;</button></span></td>
+                        
+                                <!-- <td><button>View</button></td> -->
+                              </tr>
+                              <tr >
+                                <td>06</td>
+                                <td>Ganesh Chand</td>
+                                <td>ganeshchand@gmail.com</td>
+                                <td>03-24-22</td>
+                                <td>Trainer</td>
+                                <td><span class="data-list" style="font-size: 1rem;"><button>&#10003;</button>&nbsp;&nbsp;&nbsp;&nbsp;<button>&#10060;</button></span></td>
+                        
+                                <!-- <td><button>View</button></td> -->
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </section>
+                    </section>
+                  </div>
+
+
+                  <div class="contains">
+  
+
+
+                    <section class="mains">
+                
+                      <section class="attendance">
+                        <div class="attendance-list">
+                          <h1>Course Registration Approval</h1>
+                          <div class="search-boxz">
+                            <i class="uil uil-search"></i>
+                            <!-- <input type="text" placeholder="Search here..."> -->
+                            <select>
+                              <option>Select filter type</option>
+                              <option>Name</option>
+                              <option>Type</option>
+                              <option>Course</option>
+                            </select>
+                        </div>
+                          <table class="tables">
+                            <thead>
+                              <tr>
+                                <th>S.No</th>
+                                <th>Name</th>
+                                <th>Courses</th>
+                                <th>Joined</th>
+                                <th>Type</th>
+                                <th>Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>01</td>
+                                <td>Prem Shahi</td>
+                                <td>HTML</td>
+                                <td>03-24-22</td>
+                                <td>Student</td>
+                                <td><span class="data-list" style="font-size: 1.5rem;"><button style="background-color: #34AF6D;">&#10003;</button></span></td>
+                              
+                                <!-- <td><button>View</button></td> -->
+                              </tr>
+                              
+                              
+                              <tr >
+                                <td>02</td>
+                                <td>Pratima Shahi</td>
+                                <td>React JS</td>
+                                <td>03-24-22</td>
+                                <td>Student</td>
+                                <td><span class="data-list" style="font-size: 1.5rem;"><button style="background-color: #34AF6D;">&#10003;</button></span></td>
+                              
+                                <!-- <td><button>View</button></td> -->
+                              </tr>
+                              
+                            </tbody>
+                          </table>
+                        </div>
+                      </section>
+                    </section>
+                  </div>
+
+
+                  <div class="contains">
+  
+
+
+                    <section class="mains">
+                
+                      <section class="attendance">
+                        <div class="attendance-list">
+                          <h1>Users</h1>
+                          <div class="search-boxz">
+                            <i class="uil uil-search"></i>
+                            <!-- <input type="text" placeholder="Search here..."> -->
+                            <select>
+                              <option>Select filter type</option>
+                              <option>Name</option>
+                              <option>Type</option>
+                              <option>Course</option>
+                            </select>
+                        </div>
+                          <table class="tables">
+                            <thead>
+                              <tr>
+                                <th>S.No</th>
+                                <th>Name</th>
+                                <th>Courses</th>
+                                <th>Joined</th>
+                                <th>Type</th>
+                                
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>01</td>
+                                <td>Prem Shahi</td>
+                                <td>HTML</td>
+                                <td>03-24-22</td>
+                                <td>Student</td>
+                                <!-- <td><button>View</button></td> -->
+                              </tr>
+                              <tr class="actives">
+                                <td>02</td>
+                                <td>Deepa Chand</td>
+                                <td>Javascript</td>
+                                <td>03-24-22</td>
+                                <td>Trainer</td>
+                               </tr>
+                              <tr>
+                                <td>03</td>
+                                <td>prakashhai</td>
+                                <td>CSS</td>
+                                <td>03-24-22</td>
+                                <td>Trainer</td>
+                              </tr>
+                              
+                              <tr >
+                                <td>04</td>
+                                <td>Pratima Shahi</td>
+                                <td>React JS</td>
+                                <td>03-24-22</td>
+                                <td>Student</td>
+                                <!-- <td><button>View</button></td> -->
+                              </tr>
+                              <tr >
+                                <td>05</td>
+                                <td>Ganesh Chand</td>
+                                <td>Angular JS</td>
+                                <td>03-24-22</td>
+                                <td>Trainer</td>
+                                <!-- <td><button>View</button></td> -->
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </section>
+                    </section>
+                  </div>
+
+                  
+
+                
+            </div>
+        </div>
+    </section>
+
+  
+</body>
+</html>

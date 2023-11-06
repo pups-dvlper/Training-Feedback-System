@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" href="/assets/img/user 2.png" type="image/icon type">
+    
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+    <title>Student Notify Panel</title>
+
+<style>
+.wrapperz {
+	width: 1000px;
+	height: 50rem;
+	box-shadow: 0 10px 12px 15px rgba(0, 0, 0, 0.2);
+}
+.tab-contentz {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+}
+.single-btnz {
+	display: flex;
+}
+.t-btnz {
+	background-color: #ffffff;
+	border: none;
+	padding: 10px 25px;
+	cursor: pointer;
+	height: 40px;
+	font-size: 15px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	width: 200px;
+}
+.t-btnz:hover {
+	background-color: #62d572;
+	color: #fff;
+}
+.tabz {
+	display: none;
+	width: 90%;
+	padding: 20px;
+	background-color: #fff;
+	padding: 30px;
+	/* height: 3000px; */
+	/* text-align: center; */
+}
+.tabz h2 {
+	font-size: 25px;
+	margin: 0;
+	padding: 0;
+}
+/* .tab p {
+	color: #464646;
+	line-height: 2;
+} */
+.btnz-active {
+	background-color: #e4e9fd;
+	transform: scaleY(1.05);
+	transform-origin: bottom;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+               <img src="/assets/img/user 2.png" alt="logo">
+            </div>
+
+            <span class="logo_name"> Student Panel</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="index.html">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Dashboard</span>
+                </a></li>
+                <li><a href="studentregister.html">
+                    <i class="uil uil-files-landscapes"></i>
+                    <span class="link-name">Register</span>
+                </a></li>
+                <li><a href="studentnewfeedback.html">
+                    <i class="uil uil-feedback"></i>
+                    <span class="link-name">Feedback</span>
+                </a></li>
+                <li><a href="studendnotify.html">
+                  <i class="uil uil-bell"></i>
+                  <span class="link-name">Notifications</span>
+              </a></li>
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="/index.html">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+
+             
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search here...">
+            </div>
+            <h2>Hello STU-001...</h2>
+            <img src="/assets/img/user 2.png" alt="profile">
+        </div>
+
+        <div class="dash-content">
+          <div class="overview">
+              <div class="title">
+                  <i class="uil uil-book"></i>
+                  <span class="text">Notifications</span>
+              </div>
+          </div>
+
+          <div class="tab-contentz">
+            <div class="wrapperz">
+                <div class="single-btnz">
+                    <button class="t-btnz btnz-active" onclick="simpleTab(0)">Courses Notifications</button>
+                    <button class="t-btnz" onclick="simpleTab(1)">Feedback Responses</button>
+                </div>
+                <div class="tabz" id="tab1z">
+                    <h2>You have been successfully enrolled in these courses !!!</h2>
+                    <section class="main-course">
+                        
+                        <div class="course-box">
+                            
+                          <div class="course">
+                            <div class="box">
+                              <h3>HTML</h3>
+                              
+                              <i class="fab fa-html5 html"></i>
+                              <button>Enrolled</button>
+                              
+                            </div>
+                            <div class="box">
+                              <h3>CSS</h3>
+                              
+                              <i class="fab fa-css3-alt css"></i>
+                              <button>Upcoming</button>
+                              
+                            </div>
+                            <div class="box">
+                              <h3>JavaScript</h3>
+                              
+                              <i class="fab fa-js-square js"></i>
+                              <button>Upcoming</button>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+             
+              
+                </div>
+          
+                <div class="tabz" id="tab2z">
+                    <h2>Your past feedback & responses !!!</h2>
+                    <section class="main-course">
+                        
+                        <div class="course-box">
+                            
+                          <div class="course">
+                            <div class="box">
+                              <h3>HTML</h3>
+                              
+                              <i class="fab fa-html5 html"></i>
+                              <a href="studentresponse.html"><button>Responses</button></a>
+                              
+                            </div>
+                            <div class="box">
+                              <h3>CSS</h3>
+                              
+                              <i class="fab fa-css3-alt css"></i>
+                              <a href="studentresponse.html"><button>Responses</button></a>
+                              
+                            </div>
+                            <div class="box">
+                              <h3>JavaScript</h3>
+                              
+                              <i class="fab fa-js-square js"></i>
+                              <a href="studentresponse.html"><button>Responses</button></a>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+               
+              
+                </div>
+            </div>
+        </div>  
+        </div> 
+    </section>
+
+    
+
+
+    <script>
+      function simpleTab(myBtn) {
+        let tabs = document.getElementsByClassName("tabz");
+        for (let i = 0; i < tabs.length; i++) {
+            tabs[i].style.display = "none";
+        }
+        tabs[myBtn].style.display = "block";
+
+        
+        let buttons = document.getElementsByClassName("t-btnz");
+        for (let i = 0; i < buttons.length; i++) {
+            buttons[i].classList.remove("btnz-active");
+        }
+        
+        buttons[myBtn].classList.add("btnz-active");
+        }
+
+        simpleTab(0);
+    </script>
+</body>
+</html>
